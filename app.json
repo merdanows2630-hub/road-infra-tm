@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "Ýol Infrastrukturasy TM",
+    "slug": "road-infra-tm",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./src/assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A2540"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/icon.png",
+        "backgroundColor": "#0A2540"
+      },
+      "package": "com.roadinfra.tm",
+      "permissions": [
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.roadinfra.tm",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Siziň ýeriňizi kesgitlemek üçin gerek.",
+        "NSCameraUsageDescription": "Ýol ýagdaýyny surata almak üçin gerek.",
+        "NSPhotoLibraryUsageDescription": "Galereýadan surat saýlamak üçin gerek."
+      }
+    },
+    "plugins": [
+      "expo-location",
+      "expo-image-picker",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Ýol ýagdaýyny surata almak üçin kamera gerek."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "6eaa5c0e-e246-4d1e-bac3-cc626c29bf32"
+      }
+    }
+  }
+}
